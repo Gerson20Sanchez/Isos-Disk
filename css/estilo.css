@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color: black;
+    font: 200px 14px 'Poppins', 'sans-serif';
+}
+/*apartado del encabezado*/
+.superiorbar{
+    background-color: #0f1569;
+    display: flex;
+    align-items: center;
+    position: fixed;  
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    width: 100%;
+}
+.imagen-logo img{
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.buscador{
+    
+    float: right;
+}
+.escrito-pagina{
+    background-color: #222cb3;
+    text-align: center;
+    padding: 20px;
+}
+.escrito-pagina  > h1{   
+    color: antiquewhite;
+}
+.contenedort img{
+    padding-top: 10px;
+    background-color: rgb(30, 140, 160); 
+    text-align: center;
+    width: 100%;
+}
+.contenedort h1{
+    background-color: rgb(29, 73, 59);
+    display: flex;
+    align-content: center;
+}
+
+.contenedorti{ /*contenedor del logo*/ 
+    display: flex;
+}
+
+.imagenn{
+    
+    background-repeat: no-repeat;
+    background-position: cover;
+    max-height:150px;
+    width:100% ;
+    height:30% ;
+}
+
+/*apartado del cuerpo*/
+.juegos h2{
+    color: #222cb3;
+}
+.juegos p{
+    color: #222cb3;
+}
+
+.cuerpo{
+    display: flex;
+    flex-direction: row;/* ordear los elementos*/
+    flex-wrap: wrap; /*responsivo*/
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: auto;
+}
+.contenedor{ /*contenedor de las imagenes*/
+    background-color: bisque;
+    display: block;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    border-radius: 20px;
+    padding: 15px;
+
+}
+img{
+    vertical-align: middle;
+    border-style: none;
+    overflow: clip;
+}
+.ingresarjuego{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+/*parte inferior del proyecto donde estaran algunos link*/
+li{
+    list-style: none;
+    text-decoration: none;
+    background-color: azure;
+    padding: 10px;
+    border-radius: 10px;
+}
+footer{
+    padding: 20px;
+    background-color: rgb(31, 142, 175);
+    text-align:center;
+    padding-top: auto;
+    height: 50px;
+}
+footer  ul{
+    display: inline-block;
+}
+footer ul li{
+    float: left;
+    margin-left: 20px;
+}
+footer > ul > li{
+    margin: 50px;
+    display: flex;
+    text-transform: uppercase;
+}

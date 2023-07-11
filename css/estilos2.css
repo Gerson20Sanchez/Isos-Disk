@@ -1,0 +1,174 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.superiorbar{
+    background-color: #0f1569;
+    display: flex;
+    align-items: center;
+    position: fixed;  
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    width: 100%;
+}
+/*______________________________________________________cuerpo*/
+body{
+    background-color: rgb(5, 0, 0);
+    font: 200px 14px 'Poppins', 'sans-serif';
+}
+.contenedor {
+    background-color: rgb(82, 192, 192);
+    outline: 3px solid;
+    display: block;
+    justify-content: end;
+    margin-left: 10%;
+    margin-right: 10%;  
+}
+header{
+    width: 100%;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+}
+/*______________________________________________________imagen principal*/
+.cuerpo-2{
+    display: flex; 
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.imagen1 {
+    display: flex;
+    margin: 4% 17% 0% 24%;
+    
+}
+.imagen1 img{
+    border-radius: 8px;
+    align-items: center;
+    object-fit: contain; /*para conservar la forma de la imagen*/
+}
+/*______________________________________________________apartado de mas informacion*/
+.mas-info{
+    border-radius: 8px;
+    background-color: rgb(19, 77, 153);
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin: 0% 7% 7% 7%;  
+}
+.mas-info ul{
+    margin:10%;
+}
+.mas-info ul li{
+    margin: 5%;
+    text-align: center;
+}
+.mas-info > ul > p{
+    border-color: black ;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    background-color: rgb(235, 226, 226);
+}
+
+/*_______________________________________imagenes de referencia y video*/
+.carrocel{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 100%;
+    margin-bottom: 10%;
+    max-width: 400px;
+    overflow: hidden;
+}
+.carrocel .carrocel-img{/*la imagen sobrepasa*/
+    width: 200%;
+    display: flex;
+    flex-flow: row ;
+    justify-content: flex-start;
+    align-items: center;
+
+    transition: .10s ease;  
+}
+.carrocel .img{
+    
+    object-fit:contain;
+    width: calc(200%/4) ;
+    min-height:200px;
+}
+.carrocel .puntos{
+    width: 100%;
+    padding: 5px ;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.carrocel .punto{
+    width:15px ;
+    height: 15px;
+    background-color: aliceblue;
+    margin:7px ;
+}
+.carrocel .punto.activo{
+    background-color: orange;
+}
+
+.video{
+    width: 100%;
+    min-height: 200px;
+}
+.video iframe {
+    max-width: 100%;
+  }
+/*_______________________________________apartado de links de descarga*/
+.descargar{  
+    /*background-color: palegoldenrod; */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;/* ordenar los elementos*/
+    flex-wrap: wrap; /*responsivo*/
+}
+.descargar a{
+    float: left;
+    margin-top: 20px;
+    margin: 7px;
+}
+.descargar img{
+    background-color: rgb(75, 165, 165);
+    padding: 10px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: black;   
+}
+/*___________________________________________________pie de pagian*/
+footer{
+    padding: 20px;
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+    background-color: rgb(40, 146, 185);
+    text-align:center;   
+}
+footer  ul{
+    display: inline-block;
+}
+footer ul li{
+    float: left;
+    margin-left: 20px;
+}
+footer > ul > li{
+    margin: 50px;
+    display: flex;
+    text-transform: uppercase;
+}
+li{
+    list-style: none;
+    text-decoration: none;
+    background-color: azure;
+    padding: 10px;
+    border-radius: 10px;
+}
